@@ -1,177 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, shrink-to-fit=no, initial-scale=1.0"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Suyesh Badge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&family=Vollkorn:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="css/portfolio.css" />
     <title>Suyesh Badge</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="shortcut icon" href="/assets/Images/sb.png" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
-</head>
+  </head>
 
-
-<body class="bg-black text-white mx-auto">
-    <!-- Navbar -->
-    <div id="navbar" class="flex h-16 py-3 text-white justify-center md:justify-between gap-10 text-3xl font-semibold font-mono bg-black fixed z-10 top-0  w-full
-    ">
+  <body>
+    <div class="loader flex">
+      <div class="loadingio-spinner-ripple-0r1rujj3n6i">
+        <div class="ldio-2skp4pzb2x5">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="contain-all">
+      <header class="header w-100">
         <div class="">
-            <a href="#home"><img
-                    class="h-16 transform transition-all ease-in-out hover:scale-105 duration-500 md:ml-24 "
-                    src="assets/Images/logo.png" alt=""></a>
-        </div>
-        <div class="md:flex space-x-14 hidden ">
-            <a href="#projects"><img class="h-16 transform transition-all ease-in-out hover:scale-105 duration-500 "
-                    src="assets/Images/projects.png" alt=""></a>
-            <a href="#about"><img class="h-16 transform transition-all ease-in-out hover:scale-105 duration-500 "
-                    src="assets/Images/about.png" alt=""></a>
-            <a href="#connect"><img class="h-16 transform transition-all ease-in-out hover:scale-105 duration-500 "
-                    src="assets/Images/get in touch.png" alt=""></a>
-
-        </div>
-    </div>
-
-    <!-- Bottom bar -->
-    <div class="md:hidden bg-black flex justify-around fixed transition-all pb-2 ease-in-out inset-x-0 bottom-0 z-10 ">
-        <a href="#projects"><img class="h-12 transform transition-all ease-in-out hover:scale-105 duration-500 "
-                src="assets/Images/projects.png" alt=""></a>
-        <a href="#about"><img class="h-12 transform transition-all ease-in-out hover:scale-105 duration-500 "
-                src="assets/Images/about.png" alt=""></a>
-        <a href="#connect"><img class="h-12 transform transition-all ease-in-out hover:scale-105 duration-500 "
-                src="assets/Images/get in touch.png" alt=""></a>
-
-    </div> <!-- End navbar -->
-
-
-    <div id="home" class="flex transition-all ease-in-out flex-col md:flex-row  items-center ">
-        <div class=" my-32 md:mt-56  ">
-            <img class=" mx-auto rounded-full w-10/12 md:w-6/12" src="/assets/Images/me.jpg" alt="">
-            <div class="max-w-max text-white md:text-3xl text-2xl text-center mx-auto  mt-4 font-mono">
-                <h1 class="">Suyesh Badge</h1>
-                <h1 class="inline-block">Engineer <b>|</b> Programmer <b class="hidden md:inline">|</b> <br
-                        class="md:hidden"> Web Developer</h1>
+          <nav class="flex w-100">
+            <a class="brand" href="index.html"
+              >Suyesh<span class="logo-blue">Badge</span></a
+            >
+            <div class="navigation">
+              <input
+                type="checkbox"
+                name=""
+                class="navigation-checkbox"
+                id="nav-toggle"
+              />
+              <label for="nav-toggle" class="navigation-btn">
+                <span class="navigation-icon">&nbsp;</span>
+              </label>
+              <div class="navigation-background">&nbsp;</div>
+              <div class="navigation-contain">
+                <ul class="navigation-list">
+                  <li class="navigation__item">
+                    <a class="nav-link home-page active" href="#home-page"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a class="nav-link about-page" href="#about-page"
+                      >About Me</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a class="nav-link skills-page" href="#skills-page"
+                      >Skills</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a class="nav-link project-page" href="#project-page"
+                      >My projects</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a class="nav-link contact-page" href="#contact-page"
+                      >Contact Me</a
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="header-social-icons mobile-social-icons text-center flex mx-auto"
+                >
+                  <a
+                    href="https://twitter.com/suyesh_badge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="twitter link"
+                    class="flex"
+                  >
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/suyesh-badge-536000177/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="linkedin link"
+                    class="flex mid-a"
+                  >
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://github.com/SuyeshBadge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="github link"
+                    class="flex"
+                  >
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="-mt-16 md:mb-32 md:w-6/12   px-5 ">
-            <h1 class="text-3xl">
-                Hello Everyone. <br>
-                I am <b class="">Suyesh</b> from <b class=" ind font-mono "> India </b>, a Full Stack Developer with an
-                expertise in <img class="h-7 inline -mr-1.5" src="/assets/Images/dj.png" alt=""> ango.
-                I turn Optimistic ideas into 💻 Web Applications, and have created some successful applications like
-                that.
-            </h1>
-
-
-        </div>
-    </div> <!-- End home page -->
-    <div id="projects" class="md:mb-44 mb-24 bg-black h-1 md:h-4 w-10"></div>
-    <div id="" class="  mx-auto w-full">
-        <img class="  h-16 mx-auto md:mb-24 " src="/assets/Images/projects.png">
-        <div class="flex md:justify-around md:flex-row flex-col ">
-            <!-- Tenant Buddy -->
-            <div class=" transition-all ease-in-out hover:scale-105 md:hover:scale-125 transform duration-500  flex flex-col gap-1 bg-gradient-to-br
-                 from-green-600 to-blue-500  md:w-96 rounded-xl p-5 m-5 md:hover:translate-x-24 ">
-                <div id="title" class="text-3xl font-bold text-center font-mono my-5 ">TenantBuddy</div>
-                <div id="body" class=" space-y-8">
-                    <img class="rounded-xl border-2 border-dashed" src="/assets/Images/tenant.jpg" alt="">
-                    <h1 class="text-lg "> A room rental service specially for Students, designed with <b> Tailwind CSS
-                        </b>and
-                        powered by <b> Django</b>
-                    </h1>
-                </div>
-                <div class="mx-auto my-5">
-                    <a href="https://tenantbuddy.herokuapp.com/" target="_blank"
-                        class="mx-auto text-center text-xl font-bold font-mono bg-green-500 px-3 py-2 rounded-xl  ">Visit</a>
-                </div>
+            <div class="ml-auto mobile-none desktop-nav" id="">
+              <div class="navbar-nav">
+                <a class="nav-link home-page active" href="#home-page">Home</a>
+                <a class="nav-link about-page" href="#about-page">About Me</a>
+                <a class="nav-link skills-page" href="#skills-page">Skills</a>
+                <a class="nav-link project-page" href="#project-page"
+                  >My projects</a
+                >
+                <a class="nav-link contact-page" href="#contact-page"
+                  >Contact Me</a
+                >
+              </div>
             </div>
-
-            <!-- Depression Go -->
-            <div class=" transition-all ease-in-out hover:scale-105 md:hover:scale-125 transform duration-500  flex flex-col gap-1 bg-gradient-to-br
-                 from-green-600 to-blue-500  md:w-96 rounded-xl p-5 m-5 md:hover:-translate-x-24 ">
-                <!-- title -->
-                <div class="text-3xl font-bold text-center font-mono my-5 ">DepressionGo</div>
-                <!-- body -->
-                <div class=" space-y-8">
-                    <img class="rounded-xl border-2 border-dashed " src="/assets/Images/deperssion.jpg" alt="">
-                    <h1 class="text-lg "> A Stress relaxing Web application designed for helping everyone out there
-                        having a hard time using <b> Bootstrap
-                        </b>and
-                        <b> Django</b>
-                    </h1>
-                </div>
-                <div class="mx-auto my-5">
-                    <a href="https://depressiongo.herokuapp.com/" target="_blank"
-                        class="mx-auto text-center text-xl font-bold font-mono bg-green-500 px-3 py-2 rounded-xl">Visit</a>
-                </div>
+            <div
+              class="header-social-icons mobile-none text-center flex mx-auto"
+            >
+              <a
+                href="https://twitter.com/suyesh_badge"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex"
+              >
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/suyesh-badge-536000177/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex mid-a"
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://github.com/SuyeshBadge"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex"
+              >
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
             </div>
+          </nav>
         </div>
+      </header>
+      <main>
+        <section class="home-page" id="home-page">
+          <div class="container h-100">
+            <div class="home-page-container flex h-100">
+              <div class="">
+                <img src="./images/me.png" class="home-img" alt="" />
+                <small class="home-section-intro">WEB DEVELOPER</small>
+                <h1 class="name">Hello, I'm Suyesh!</h1>
+                <p class="">
+                  <span class="home-intro">
+                    I use HTML, CSS & Javascript to bring designs to life. I am
+                    specialized in creating clean, fast and accessible websites
+                    using appropriate web technologies and techniques.
+                  </span>
+                </p>
+                <div class="home-btn-contain">
+                  <a
+                    href="./assets/Suyesh's Resume.pdf"
+                    class="home-btn btn"
+                    download
+                  >
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Resume
+                  </a>
+                  <a href="#contact-page" class="home-btn btn">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    Hire Me
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-page" id="about-page">
+          <div class="container">
+            <div class="card mb-3">
+              <div class="flex about-card">
+                <div class=" ">
+                  <div class="">
+                    <small class="section-intro">ABOUT ME</small>
+                    <h2 class="card-title headings p-1">More about me</h2>
+                    <p class="card-text">My name is Suyesh Badge.</p>
+                    <p class="card-text">
+                      Currently, I am working as a Software Engineer at
+                      Persistent Systems. I love solving problems and learning
+                      new things.
+                    </p>
+                    <p class="card-text">
+                      While not coding or learning, I enjoy watching movies,
+                      playing games, reading good books, and also spending time
+                      with friends and family.
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="skill-card-contain flex">
+                    <div class="about-card-skill">
+                      <div class="about-page-card">
+                        <img
+                          src="./images/web-research.svg"
+                          class="skill-card-text"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-page-card">
+                        <img
+                          src="./images/community.svg"
+                          class="skill-card-text"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-page-card">
+                        <img
+                          src="./images/streaming.svg"
+                          class="skill-card-text"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-page-card">
+                        <img
+                          src="./images/personal-development.svg"
+                          class="skill-card-text"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="skills-page" id="skills-page">
+          <div class="container py-5">
+            <div class="grid skill-contain">
+              <div class="col-md-6">
+                <div>
+                  <h2 class="headings">Tools / Technologies</h2>
+                </div>
+                <div class="grid skill-grid">
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img src="./images/HTML5_Badge.svg" alt="" />
+                      <h5 class="contact-text p-1">HTML</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img src="./images/CSS3-logo.png" alt="" />
+                      <h5 class="contact-text p-1">CSS</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img src="./images/javascript.png" alt="" />
+                      <h5 class="contact-text p-1">JavaScript</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img
+                        src="./images/node-js.png"
+                        alt=""
+                        style="width: 120px"
+                      />
+                      <h5 class="contact-text p-1">Node.JS</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img src="./images/python.png" alt="" />
+                      <h5 class="contact-text p-1">Python</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img src="./images/django.svg" alt="" />
+                      <h5 class="contact-text p-1">Django</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <i class="fa fa-4x fa-git"></i>
+                      <h5 class="contact-text p-1">Git</h5>
+                    </div>
+                  </div>
+                  <div class="skill-cards card">
+                    <div class="card-body">
+                      <img src="./images/tailwind-css.svg" alt="" />
+                      <h5 class="contact-text p-1">Tailwind CSS</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div>
+                  <h2 class="headings">Education</h2>
+                </div>
+                <div class="no-certificate-toast"></div>
+                <div class="certificate-img-contain">
+                  <div class="certificate-img">
+                    <img class="w-100 view-certificate" />
+                  </div>
+                </div>
+                <div class="grid edu-grid">
+                  <div class="edu-card card">
+                    <div class="card-body">
+                      <div class="edu-head flex">
+                        <h3 class="edu-title">Programming Languages</h3>
+                        <!-- <h4 class="edu-time">April - June 2021</h4> -->
+                      </div>
+                      <h5 class="edu-venue">LinkedIn learning, Udemy</h5>
+                      <hr />
+                      <ul class="edu-ul">
+                        <li class="edu-list">
+                          The Complete JavaScript Course 2022: From Zero to
+                          Expert! (Udemy)
+                        </li>
+                        <li class="edu-list">
+                          Python: Programming Efficiently (LinkedIn learning)
+                        </li>
+                      </ul>
 
+                      <!-- <button type="button" class="certificate-btn blue-link">View
+                                            Certificate</button> -->
+                    </div>
+                  </div>
+                  <div class="edu-card card">
+                    <div class="card-body">
+                      <div class="edu-head flex">
+                        <h3 class="edu-title">Web development</h3>
+                        <!-- <h4 class="edu-time">Aug - Sep 2020</h4> -->
+                      </div>
+                      <h5 class="edu-venue">LinkedIn learning, Udemy</h5>
+                      <hr />
+                      <ul class="edu-ul">
+                        <li class="edu-list">
+                          Node.js, Express, MongoDB & More: The Complete
+                          Bootcamp 2022 (Udemy)
+                        </li>
+                        <li class="edu-list">
+                          Learning Django (LinkedIn Learning)
+                        </li>
+                      </ul>
+                      <img
+                        src="./assets/certificate/roothub-certificate.jpg"
+                        class="w-100 certificate-img-tag"
+                        alt="web responsive certificate"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="grid edu-grid"> -->
 
-    </div> <!-- End profile -->
-
-    <!-- About section -->
-    <div id="about" class="md:mb-56 mb-24 bg-black h-1 md:h-4 w-10"></div>
-
-    <div class="mb-32 mx-auto w-full">
-        <img class="h-20 mx-auto " src="/assets/Images/about.png" alt="">
-        <h1 class="text-xl md:text-3xl font-mono p-3 text-center md:w-9/12 mx-auto my-14">
-            <p>
-                Hello👋 this is <b> Suyesh Badge</b>, Currently completing my <br class="md:hidden">🎓 Undergrads in
-                Computer Science and Engineering
-                from <br class="md:hidden"> <img
-                    class="h-7 inline -mr-1.5 rounded-full  transition transform hover:scale-125 ease-in-out duration-500"
-                    src="/assets/Images/pote.jpeg" alt=""> P.R. Pote (Patil) college of Engineering and Management,
-                Amravati, Maharashtra. <br>
-                I am a <img class="h-7 inline -mr-1.5 transition transform hover:scale-125 ease-in-out duration-500"
-                    src="/assets/Images/dev.png" alt=""> Full-Stack Developer having
-                experience in managing my projects in <img
-                    class="h-6 inline  -mr-1.5 transition transform hover:scale-125 ease-in-out duration-500"
-                    src="/assets/Images/dj.png" alt=""> Django & <br class="md:hidden">
-                <img class="h-7 inline -mr-1.5 transition transform hover:scale-150 ease-in-out duration-500 "
-                    src="/assets/Images/tailwind.png" alt=""> Tailwind CSS.
-                Other than Web Development I am also good in programming in <br> <img
-                    class="h-7 inline -mr-1.5 transition transform hover:scale-125 duration-500 ease-in-out"
-                    src="/assets/Images/python.png" alt=""> Python having a tag of 3⭐ coder on Codechef.
+                  <div class="edu-card card">
+                    <div class="card-body">
+                      <div class="edu-head flex">
+                        <h3 class="edu-title">Bachelors of Engineering</h3>
+                        <h4 class="edu-time">Aug 2017 - June 2021</h4>
+                      </div>
+                      <h5 class="edu-venue">
+                        Sant Gadge Baba Amravati University, Amravati,
+                        Maharashtra
+                      </h5>
+                      <hr />
+                      <ul class="edu-ul">
+                        <!-- <li class="edu-list">
+                                                Studying for a B.Eng for Computer Engineering
+                                            </li> -->
+                        <li class="edu-list">
+                          Built a simple Room rental service App using
+                          Django,AWS,PostgreSQL.
+                        </li>
+                        <li class="edu-list">
+                          Built a social interaction App using Django,HTML/CSS.
+                        </li>
+                        <li class="edu-list">
+                          Built a simple Online Mobile Store using HTML & CSS.
+                        </li>
+                      </ul>
+                      <img
+                        src="./assets/certificate/web responsive certificate.PNG"
+                        class="w-100 certificate-img-tag"
+                        alt="web responsive certificate"
+                      />
+                      <!-- <button type="button" class="certificate-btn blue-link" disabled>View
+                                            Certificate</button> -->
+                    </div>
+                  </div>
+                  <div class="edu-card card">
+                    <div class="card-body">
+                      <div class="edu-head flex">
+                        <h3 class="edu-title">
+                          Secondary & Higher Secondary School
+                        </h3>
+                        <h4 class="edu-time">April 2005 - April 2017</h4>
+                      </div>
+                      <h5 class="edu-venue">
+                        Kendriya Vidyalaya No. 2 CRPF, Gandhinagar, Gujarat
+                      </h5>
+                      <hr />
+                      <ul class="edu-ul">
+                        <li class="edu-list">
+                          Got intoduced to Computer Programming in High School
+                          for the first time.
+                        </li>
+                        <li class="edu-list">
+                          Learnt C++,SQL & How DataBases works.
+                        </li>
+                        <li class="edu-list">
+                          Learnt HTML & CSS , designed many small webpages.
+                        </li>
+                        <li class="edu-list">Played a lot of BasketBall 🏀</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="project-page" id="project-page">
+          <div class="container py-5">
+            <div>
+              <div>
+                <div class="project-grid">
+                  <div class="project-grid-card">
+                    <div>
+                      <small class="section-intro">PROJECTS</small>
+                      <h2 class="headings">Completed Projects</h2>
+                      <p>Here are a few of my completed projects</p>
+                    </div>
+                  </div>
+                  <div class="project-grid-card project-card">
+                    <div class="h-100">
+                      <img
+                        src="./images/tenantbuddy.png"
+                        class="h-100 w-100"
+                        alt="..."
+                      />
+                      <!-- <img src="./images/hotel-booking.jpg" class="h-100 w-100" alt="..."> -->
+                      <div class="card-details w-100">
+                        <div class="w-100">
+                          <h3 class="card-title">Tenant Buddy</h3>
+                          <a
+                            href="https://tenantbuddy.herokuapp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn"
+                          >
+                            <i class="fa fa-link" aria-hidden="true"></i> Live
+                            Demo
+                          </a>
+                          <a
+                            href="https://github.com/SuyeshBadge/TenantBuddy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn"
+                          >
+                            <i class="fa fa-link" aria-hidden="true"></i> Repo
+                            Link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-grid-card project-card">
+                    <div class="">
+                      <img
+                        src="./images/food.png"
+                        class="h-100 w-100"
+                        alt="..."
+                      />
+                      <div class="card-details w-100 h-100">
+                        <div class="w-100">
+                          <h3 class="card-title">The Indian Food DB</h3>
+                          <a
+                            href="http://indian-food-db.herokuapp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn"
+                          >
+                            <i class="fa fa-link" aria-hidden="true"></i> Live
+                            Demo
+                          </a>
+                          <a
+                            href="https://github.com/SuyeshBadge/indianFoodAPI"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn"
+                          >
+                            <i class="fa fa-link" aria-hidden="true"></i> Repo
+                            Link
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact-page" id="contact-page">
+          <div class="container">
+            <div class="contact-info">
+              <div class="grid contact-info-grid">
+                <div class="contact-info">
+                  <img src="./images/me.png" class="w-100 h-100" alt="" />
+                </div>
+                <div class="">
+                  <div class="my">
+                    <p>Have an idea you want to bring to life?</p>
+                    <p>Or you want to say hi?</p>
+                    <p>Why not send me a message?</p>
+                  </div>
+                  <form class="text-center">
+                    <div class="input-wrap">
+                      <label class="input-label w-100" for="name">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-100"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="input-wrap">
+                      <label class="input-label w-100" for="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </label>
+                      <input
+                        type="email"
+                        class="w-100"
+                        name="email"
+                        id="email"
+                        placeholder="E-Mail"
+                        required
+                      />
+                      <small class="error"></small>
+                    </div>
+                    <div class="input-wrap">
+                      <label class="input-label w-100" for="subject">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-100"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                      />
+                    </div>
+                    <div class="input-wrap">
+                      <label class="input-label w-100" for="message">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                      </label>
+                      <textarea
+                        rows="5"
+                        class="w-100"
+                        name="message"
+                        id="message"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                    </div>
+                    <label for="submit" class="">
+                      <button type="submit" class="button btn">
+                        SEND MESSAGE
+                      </button>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="connect-page" id="connect-page">
+          <div class="container">
+            <div class="contact-info">
+              <div class="flex connect-info-contain">
+                <div class="my">
+                  <h1>Connect With Me Via</h1>
+                </div>
+                <div class="social-media-icons my">
+                  <a
+                    href="https://twitter.com/suyesh_badge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="twitter link"
+                    class=""
+                  >
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/suyesh-badge-3726361b0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="linkedin link"
+                    class=""
+                  >
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://github.com/suyeshbadge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class=""
+                  >
+                    <i
+                      class="fa fa-github"
+                      aria-label="github link"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <!-- <a href="http://wa.me/2347087040050?text=Hi,%20I'm%20interested%20in%20your%20services"
+                                    target="_blank" rel="noopener noreferrer" aria-label="linkedin link" class="">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </a> -->
+                  <a
+                    href="https://www.instagram.com/suyesh.badge/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="instagram link"
+                    class=""
+                  >
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="direct-info">
+                <p>
+                  Or you can Call:
+                  <a href="tel:+919726852670">+919726852670</a>
+                  Or Send a mail to:
+                  <a href="mailto:suyeshbadge@gmail.com"
+                    >suyeshbadge@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="py-4">
+        <div class="container">
+          <div class="flex footer-div">
+            <p class="text-center">
+              &#169;
+              <a class="brand" href=""
+                >Suyesh<span class="logo-blue">Badge</span></a
+              >
+              || 2022
             </p>
-
-        </h1>
-    </div>
-    <div id="connect" class="md:mb-56 mb-24 bg-black h-1 md:h-4 w-10"></div>
-    <div class="mb-32 mx-auto w-full">
-        <img class="h-20 mx-auto " src="/assets/Images/get in touch.png" alt="">
-
-        <div class="grid md:grid-cols-6 grid-cols-2 gap-10 justify-items-center mt-20 -mb-1 ">
-            <a href="https://www.facebook.com/suyesh.badge/" target="_blank">
-                <img class="h-24 transform transition-all ease-in-out hover:scale-125 duration-300"
-                    src="/assets/Images/fb.png" alt=""></a>
-            <a href="https://www.instagram.com/_suyesh._.badge_/" target="_blank">
-
-                <img class="h-24 transform transition-all ease-in-out hover:scale-125 duration-300"
-                    src="/assets/Images/insta.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/suyesh-badge-536000177/" target="_blank">
-
-                <img class="h-24 transform transition-all ease-in-out hover:scale-125 duration-300"
-                    src="/assets/Images/linkedin.png" alt=""></a>
-            <a href="https://github.com/SuyeshBadge" target="_blank">
-
-                <img class="h-24 transform transition-all ease-in-out hover:scale-125 duration-300 rounded-xl"
-                    src="/assets/Images/github.png" alt=""></a>
-            <a href="https://twitter.com/suyesh_badge" target="_blank">
-
-                <img class="h-28 transform transition-all ease-in-out hover:scale-125 duration-300 mx-auto "
-                    src="/assets/Images/tweeter.png" alt=""></a>
-
-                    <a href="https://drive.google.com/file/d/1DtYWCGTG1zGggp4c_ooVfJvk-gGyHTyn/view?usp=sharing" target="_blank">
-                        <h1 class="mx-auto text-center text-xl "> <img class="h-28 transform transition-all ease-in-out hover:scale-125 duration-300 mx-auto "
-                            src="/assets/Images/resume.png" alt=""> </h1>
-                    </a>
+          </div>
         </div>
-
+      </footer>
     </div>
-    <div id="con" class="md:mb-56 mb-24 bg-black h-1 md:h-4 w-10"></div>
 
-</body>
 
+    <script
+      src="https://kit.fontawesome.com/3ad8d4fbe1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
