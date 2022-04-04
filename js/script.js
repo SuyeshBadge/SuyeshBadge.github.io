@@ -110,26 +110,26 @@ const showError = (message) => {
   const formGroup = email.parentElement.closest('.input-wrap');
   formGroup.querySelector('small').innerText = message;
 };
-// const saveMessage = () => {
-//   //  fetch('http://localhost:8081/', {
-//   fetch('https://portfolio-message.herokuapp.com/', {
-//     method: 'post',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify({
-//       name: name.value,
-//       email: email.value,
-//       subject: subject.value,
-//       message: message.value,
-//     })
-//   }).then((res) => {
-//     return res;
-//     //  console.log(res);
-//   }).then((res) => {
-//     console.log(res);
-//   })
-// };
+const saveMessage = () => {
+  //  fetch('http://localhost:8081/', {
+  fetch('https://suyesh.herokuapp.com/messages/newmsg', {
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: name.value,
+      email: email.value,
+      subject: subject.value,
+      message: message.value,
+    })
+  }).then((res) => {
+    return res;
+    //  console.log(res);
+  }).then((res) => {
+    console.log(res);
+  })
+};
 
 function validateEmail(emailValid) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
