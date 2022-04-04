@@ -118,10 +118,10 @@ const saveMessage = () => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      name: name.value,
-      email: email.value,
-      subject: subject.value,
-      message: message.value,
+      Name: name.value,
+      Email: email.value,
+      Subject: subject.value,
+      Msg: message.value,
     })
   }).then((res) => {
     return res;
